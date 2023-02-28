@@ -1,0 +1,198 @@
+<!-- gollygho.lay -->
+
+<mamelayout version="2">
+
+<!-- Define Elements -->
+
+<!-- Sinden Elements -->
+  <element name="BezelStandard">
+    <image file="BezelStandard.png" />
+  </element>
+  <element name="BezelWide">
+    <image file="BezelWide.png" />
+  </element>
+  <element name="BorderStandard">
+    <image file="BorderStandard.png" />
+  </element>
+  <element name="BorderWide">
+    <image file="BorderWide.png" />
+  </element>
+  <element name="DarkStandard50">
+    <image file="DarkStandard50.png" />
+  </element>
+  <element name="DarkStandard60">
+    <image file="DarkStandard60.png" />
+  </element>
+  <element name="DarkStandard70">
+    <image file="DarkStandard70.png" />
+  </element>
+  <element name="DarkStandard80">
+    <image file="DarkStandard80.png" />
+  </element>
+  <element name="DarkWide50">
+    <image file="DarkWide50.png" />
+  </element>
+  <element name="DarkWide60">
+    <image file="DarkWide60.png" />
+  </element>
+  <element name="DarkWide70">
+    <image file="DarkWide70.png" />
+  </element>
+  <element name="DarkWide80">
+    <image file="DarkWide80.png" />
+  </element>
+
+<!-- End Sinden Elements -->
+
+	<element name="ledpanel">
+		<image file="ledpanel.png" />
+	</element>	
+	<element name="side_digit" defstate="10">
+		<image file="sideled0.png" state="0" />
+		<image file="sideled1.png" state="1" />
+		<image file="sideled2.png" state="2" />
+		<image file="sideled3.png" state="3" />
+		<image file="sideled4.png" state="4" />
+		<image file="sideled5.png" state="5" />
+		<image file="sideled6.png" state="6" />
+		<image file="sideled7.png" state="7" />
+		<image file="sideled8.png" state="8" />
+		<image file="sideled9.png" state="9" />
+	</element>	
+	<element name="mid_digit" defstate="10">
+		<image file="midled0.png" state="0" />
+		<image file="midled1.png" state="1" />
+		<image file="midled2.png" state="2" />
+		<image file="midled3.png" state="3" />
+		<image file="midled4.png" state="4" />
+		<image file="midled5.png" state="5" />
+		<image file="midled6.png" state="6" />
+		<image file="midled7.png" state="7" />
+		<image file="midled8.png" state="8" />
+		<image file="midled9.png" state="9" />
+	</element>	
+	<element name="allclosed" defstate="0">
+		<image file="allclosed.png" state="1" />
+	</element>
+	<element name="dark">
+		<image file="allclosed.png" />
+	</element>
+	<element name="1open" defstate="0">
+		<image file="1open.png" state="1" />
+	</element>	
+	<element name="2open" defstate="0">
+		<image file="2open.png" state="1" />
+	</element>	
+	<element name="3open" defstate="0">
+		<image file="3open.png" state="1" />
+	</element>	
+	<element name="4open" defstate="0">
+		<image file="4open.png" state="1" />
+	</element>	
+	<element name="5open" defstate="0">
+		<image file="5open.png" state="1" />
+	</element>
+	<element name="bezel">
+		<image file="BezelWide.png" />
+	</element>
+<!-- Define Groups -->
+
+	<group name="backdrop">
+		<element name="dollhouse" ref="allclosed">
+			<bounds left="-0.0606" top="-0.05385" right="1.0606" bottom="0.778575" />
+		</element>
+		<element name="bureau" ref="1open">
+			<bounds left="0.209" top="0.118875" right="0.3149" bottom="0.330075" />
+		</element>
+		<element name="bathroom" ref="2open">
+			<bounds left="0.4029" top="0.1785" right="0.4917" bottom="0.2577" />
+		</element>
+		<element name="toybox" ref="3open">
+			<bounds left="0.8358" top="0.1566" right="1.0019" bottom="0.263925" />
+		</element>
+		<element name="refrigerator" ref="4open">
+			<bounds left="0.2241" top="0.5001" right="0.3638" bottom="0.7416" />
+		</element>
+		<element name="porch" ref="5open">
+			<bounds left="0.8369" top="0.528075" right="0.9628" bottom="0.7221" />
+		</element>
+	</group>
+	<group name="scorepanel">
+		<element ref="ledpanel">
+			<bounds left="-0.16" top="-0.21" right="1.16" bottom="-0.05385" />
+		</element>
+		<element name="zip100" ref="side_digit">
+			<bounds left="-0.098" top="-0.1785" right="-0.046" bottom="-0.085875" />
+		</element>
+		<element name="zip10" ref="side_digit">
+			<bounds left="-0.0454" top="-0.1785" right="0.0066" bottom="-0.085875" />
+		</element>
+		<element name="zip1" ref="side_digit">
+			<bounds left="0.0082" top="-0.1785" right="0.0603" bottom="-0.085875" />
+		</element>
+		<element name="zap100" ref="side_digit">
+			<bounds left="0.9402" top="-0.1785" right="0.9924" bottom="-0.085875" />
+		</element>
+		<element name="zap10" ref="side_digit">
+			<bounds left="0.993" top="-0.1785" right="1.0462" bottom="-0.085875" />
+		</element>
+		<element name="zap1" ref="side_digit">
+			<bounds left="1.048" top="-0.1785" right="1.1002" bottom="-0.085875" />
+		</element>
+		<element name="time10" ref="mid_digit">
+			<bounds left="0.421" top="-0.18195" right="0.4985" bottom="-0.07875" />
+		</element>
+		<element name="time1" ref="mid_digit">
+			<bounds left="0.502" top="-0.18195" right="0.5795" bottom="-0.07875" />
+		</element>
+	</group>
+
+<!-- Define Views -->
+
+	<view name="Sinden Bezel">
+		<bezel element="BezelStandard">
+			<bounds left="0" top="0" right="1920" bottom="1080" />
+		</bezel>
+		<bezel element="BorderStandard">
+			<bounds left="0" top="0" right="1920" bottom="1080" />
+		</bezel>		
+		<group ref="scorepanel" blend="add">
+			<bounds xc="960" y="0" width="1440" height="169" />
+		</group>	
+		<element ref="dark">
+			<bounds xc="960" y="169" width="1223" height="910" />
+			<color alpha="0.1" />
+		</element>
+		<group ref="backdrop">
+			<bounds xc="960" y="169" width="1223" height="910" />
+		</group>
+		<screen index="0" blend="add">
+			<bounds xc="960" y="229" width="1091" height="819" />
+		</screen>
+	</view>
+	<view name="Upright_Artwork">
+		<element ref="dark">
+			<bounds left="-0.0606" top="-0.05385" right="1.0606" bottom="0.778575" />
+			<color alpha="0.1" />
+		</element>
+		<group ref="backdrop">
+			<bounds left="-0.0606" top="-0.05385" right="1.0606" bottom="0.778575" />
+		</group>
+		<group ref="scorepanel">
+			<bounds left="-0.16" top="-0.21" right="1.16" bottom="-0.05385" />
+		</group>
+		<screen index="0" blend="add">
+			<bounds left="0" top="0" right="1" bottom="0.75" />
+		</screen>
+	</view>
+</mamelayout>
+
+
+<!-- 
+
+- Artwork type: Backdrop, LED
+- Photographed backdrop pieces provided by TheGuru
+- Converted for MAME by Smitdogg
+- Lay file by Aaron Giles, Mr. Do
+
+-->
