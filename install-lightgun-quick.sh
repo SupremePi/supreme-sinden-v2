@@ -27,24 +27,28 @@ cd /home/pi/Lightgun
 wget --output-document=SindenLightgun.png https://static.miraheze.org/sindenlightgunwiki/thumb/b/bb/SINDEN_ICON_TRANSPARENCY_LUMINAR_BLACK.png/1200px-SINDEN_ICON_TRANSPARENCY_LUMINAR_BLACK.png
 cp /home/pi/Lightgun/SindenLightgun.png /home/pi/RetroPie/retropiemenu/icons/
 cp -v Borders/RetroArchBorders/* /opt/retropie/emulators/retroarch/overlays/
-#Check if on Supreme ultra V1
+#Check if on Supreme ultra
 if [ -d /home/pi/RetroPie/retropiemenu/controllertools ]; then
-#Ultra V1
+
+#Check if on Supreme ultra v1
 if [ -d /home/pi/RetroPie/scripts/.sb-unified/retropiemenu/icons ]; then
 cp /home/pi/Lightgun/SindenLightgun.png /home/pi/RetroPie/scripts/.sb-unified/retropiemenu/icons/
 fi
-#ultra V2
+
+#Check if on Supreme ultra v2
 if [ -d /home/pi/.supreme_toolkit/sb_toolkit/retropiemenu/icons/ ]; then
 cp /home/pi/Lightgun/SindenLightgun.png /home/pi/.supreme_toolkit/sb_toolkit/retropiemenu/icons/
 fi
 
 cp /home/pi/Lightgun/sinden-menu.sh /home/pi/RetroPie/retropiemenu/controllertools
-
 sudo chmod +x /home/pi/RetroPie/retropiemenu/controllertools/sinden-menu.sh
 
+#Check if on Supreme ultra v1
 if [ -d /home/pi/RetroPie/scripts/.sb-unified/retropiemenu/icons ]; then
 sudo cp /home/pi/RetroPie/retropiemenu/controllertools/sinden-menu.sh /home/pi/RetroPie/scripts/.sb-unified/retropiemenu/controllertools/
 fi
+
+#Check if on Supreme ultra v2
 if [ -d /home/pi/.supreme_toolkit/sb_toolkit/retropiemenu/icons/ ]; then
 sudo cp /home/pi/RetroPie/retropiemenu/controllertools/sinden-menu.sh /home/pi/.supreme_toolkit/sb_toolkit/retropiemenu/controllertools/
 fi
