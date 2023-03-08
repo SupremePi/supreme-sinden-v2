@@ -8,15 +8,14 @@ dialog --infobox "It looks like the Sinden lightgun is already installed!" 4 45 
 else
 
 cd /home/pi/
-git clone https://github.com/SupremePi/supreme-sinden-v2.git
-sudo chmod 755 $HOME/supreme-sinden-v2
+git clone https://github.com/SupremePi/supreme-sinden-v2.git Lightgun
+sudo chmod -R 777 $HOME/Lightgun
+sudo chown -R pi:pi $HOME/Lightgun 
 if [ -f $HOME/tamoplus/scripts/sinden-menu.sh ]; then
 sudo rm $HOME/tamoplus/scripts/sinden-menu.sh
 cp /home/pi/Lightgun/sinden-menu.sh $HOME/tamoplus/scripts/
 fi
 
-sudo chmod -R 777 /home/pi/Lightgun
-sudo chown -R pi:pi /home/pi/Lightgun 
 sudo apt install -y mono-complete
 sudo apt install -y v4l-utils
 sudo apt install -y libsdl1.2-dev
