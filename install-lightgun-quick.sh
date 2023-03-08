@@ -10,7 +10,7 @@ else
 cd /home/pi/
 git clone https://github.com/SupremePi/supreme-sinden-v2.git
 sudo mv $HOME/supreme-sinden-v2/Lightgun $HOME/
-sudo rm $HOME/supreme-sinden-v2
+sudo rm -R $HOME/supreme-sinden-v2
 sudo chmod -R 777 $HOME/Lightgun
 sudo chown -R pi:pi $HOME/Lightgun 
 if [ -f $HOME/tamoplus/scripts/sinden-menu.sh ]; then
